@@ -2,5 +2,6 @@ myenv/
 __pycache__/
 *.pyc
 .env
+users.db
 .vscode/
 .idea/
