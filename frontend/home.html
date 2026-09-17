@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Products</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="products-container">
+
+        <h1>Products</h1>
+
+
+        <!-- ========================= -->
+        <!-- PURCHASE STATUS -->
+        <!-- ========================= -->
+
+        <div class="purchase-status-section">
+
+            <h2>Purchase Status</h2>
+
+            <div id="purchase-list">
+
+                <p class="no-purchases">
+                    No purchase requests yet.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- ========================= -->
+        <!-- PURCHASE BUTTON -->
+        <!-- ========================= -->
+
+        <div class="purchase-button-container">
+
+            <button
+                class="purchase-main-button"
+                onclick="showPurchaseForm(); requestNotificationPermission()"
+            >
+                Purchase Product
+            </button>
+
+        </div>      
+
+        <!-- ========================= -->
+        <!-- ADD PRODUCT -->
+        <!-- ========================= -->
+
+        <div class="add-product">
+
+            <h2>Add Product</h2>
+
+            <div class="add-product-fields">
+
+                <input
+                    type="text"
+                    id="productName"
+                    placeholder="Product name"
+                >
+
+                <input
+                    type="text"
+                    id="productDescription"
+                    placeholder="Description"
+                >
+
+                <input
+                    type="number"
+                    id="productPrice"
+                    placeholder="Price"
+                >
+
+                <input
+                    type="number"
+                    id="productQuantity"
+                    placeholder="Quantity"
+                >
+
+            </div>
+
+            <button onclick="addProduct()">
+                Add Product
+            </button>
+
+            <p id="addMessage"></p>
+
+        </div>
+
+
+        <!-- ========================= -->
+        <!-- PRODUCTS TABLE -->
+        <!-- ========================= -->
+
+        <div class="table-container">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>ID</th>
+
+                        <th>Product</th>
+
+                        <th>Description</th>
+
+                        <th>Price</th>
+
+                        <th>Stock</th>
+
+                        <th>Edit</th>
+
+                    </tr>
+
+                </thead>
+
+
+                <tbody id="products">
+
+                    <tr>
+
+                        <td colspan="6">
+                            Loading products...
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+
+
+
+
+        <!-- ========================= -->
+        <!-- PURCHASE FORM -->
+        <!-- ========================= -->
+
+        <div
+            id="purchase-section"
+            class="purchase-section"
+            style="display: none;"
+        >
+
+            <h2>Purchase Product</h2>
+
+
+            <label for="purchaseUsername">
+                Username
+            </label>
+
+            <input
+                type="text"
+                id="purchaseUsername"
+                placeholder="Enter your username"
+            >
+
+
+            <label for="purchaseProductName">
+                Product Name
+            </label>
+
+            <input
+                type="text"
+                id="purchaseProductName"
+                placeholder="Enter product name"
+            >
+
+
+            <label for="purchaseDescription">
+                Description
+            </label>
+
+            <input
+                type="text"
+                id="purchaseDescription"
+                placeholder="Enter product description"
+            >
+
+
+            <label for="purchasePrice">
+                Price
+            </label>
+
+            <input
+                type="number"
+                id="purchasePrice"
+                placeholder="Enter price"
+                min="0"
+            >
+
+
+            <label for="purchaseQuantity">
+                Quantity
+            </label>
+
+            <input
+                type="number"
+                id="purchaseQuantity"
+                placeholder="Enter quantity"
+                min="1"
+                value="1"
+            >
+
+
+            <button onclick="confirmPurchase()">
+                Purchase
+            </button>
+
+
+            <button
+                class="cancel-button"
+                onclick="cancelPurchase()"
+            >
+                Cancel
+            </button>
+
+
+            <p
+                id="purchaseStatus"
+                class="purchase-status"
+            ></p>
+
+        </div>
+
+    </div>
+
+
+    <script src="home.js?v=5"></script>
+
+</body>
+
+</html>

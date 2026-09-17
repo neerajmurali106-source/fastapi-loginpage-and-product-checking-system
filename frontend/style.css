@@ -1,0 +1,539 @@
+/* =========================
+   GENERAL
+   ========================= */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f2f2f2;
+}
+
+
+/* =========================
+   LOGIN PAGE
+   ========================= */
+
+.login-container {
+    background: white;
+
+    padding: 30px;
+
+    width: 300px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+
+    text-align: center;
+}
+
+
+input {
+    width: 100%;
+
+    box-sizing: border-box;
+
+    padding: 12px;
+
+    margin: 10px 0;
+
+    border: 1px solid #ccc;
+
+    border-radius: 5px;
+}
+
+
+button {
+    width: 100%;
+
+    padding: 12px;
+
+    margin-top: 10px;
+
+    border: none;
+
+    border-radius: 5px;
+
+    background: #333;
+
+    color: white;
+
+    cursor: pointer;
+}
+
+
+button:hover {
+    background: #555;
+}
+
+
+#message {
+    margin-top: 15px;
+}
+
+
+/* =========================
+   PRODUCTS PAGE
+   ========================= */
+
+.products-container {
+    width: 95%;
+
+    max-width: 1200px;
+
+    margin: 40px auto;
+}
+
+
+.products-container h1 {
+    text-align: center;
+
+    margin-bottom: 30px;
+}
+
+
+/* =========================
+   ADD PRODUCT
+   ========================= */
+
+.add-product {
+    background: white;
+
+    padding: 25px;
+
+    margin-bottom: 30px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.add-product h2 {
+    margin-top: 0;
+}
+
+
+.add-product-fields {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 10px;
+}
+
+
+.add-product input {
+    width: 100%;
+
+    box-sizing: border-box;
+
+    margin: 0;
+
+    padding: 12px;
+}
+
+
+.add-product button {
+    width: 100%;
+
+    margin-top: 15px;
+}
+
+
+#addMessage {
+    text-align: center;
+}
+
+
+/* =========================
+   PRODUCTS TABLE
+   ========================= */
+
+.table-container {
+    background: white;
+
+    border-radius: 10px;
+
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    overflow-x: auto;
+}
+
+
+table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    min-width: 900px;
+}
+
+
+/* Table Header */
+
+thead {
+    background: #333;
+
+    color: white;
+}
+
+
+th {
+    padding: 15px;
+
+    text-align: left;
+
+    font-size: 15px;
+}
+
+
+/* Table Body */
+
+td {
+    padding: 14px;
+
+    border-bottom: 1px solid #ddd;
+
+    vertical-align: middle;
+}
+
+
+tbody tr:hover {
+    background: #f7f7f7;
+}
+
+
+/* Product name */
+
+td.product-name {
+    font-weight: bold;
+
+    font-size: 16px;
+}
+
+
+/* Price */
+
+td.price {
+    font-weight: bold;
+}
+
+
+/* Buy quantity */
+
+.buy-quantity {
+    width: 70px;
+
+    padding: 8px;
+
+    margin: 0;
+}
+
+
+/* Action buttons */
+
+.action-button {
+    width: auto;
+
+    padding: 8px 14px;
+
+    margin: 0 4px 0 0;
+}
+
+
+/* Edit area */
+
+.edit-row {
+    background: #fafafa;
+}
+
+
+.edit-input {
+    width: 100%;
+
+    box-sizing: border-box;
+
+    padding: 8px;
+
+    margin: 0;
+}
+
+
+/* =========================
+   PURCHASE BUTTON
+   ========================= */
+
+.purchase-button-container {
+    margin-top: 25px;
+
+    margin-bottom: 25px;
+
+    text-align: center;
+}
+
+
+.purchase-main-button {
+    width: 100%;
+}
+
+
+/* =========================
+   PURCHASE FORM
+   ========================= */
+
+.purchase-section {
+    background: white;
+
+    padding: 25px;
+
+    margin-bottom: 40px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.purchase-section h2 {
+    margin-top: 0;
+}
+
+
+.purchase-section label {
+    display: block;
+
+    margin-top: 15px;
+
+    font-weight: bold;
+}
+
+
+.purchase-section input {
+    width: 100%;
+
+    box-sizing: border-box;
+
+    padding: 12px;
+
+    margin-top: 8px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 5px;
+}
+
+
+.purchase-section button {
+    width: 100%;
+
+    margin-top: 15px;
+}
+
+
+.cancel-button {
+    background: #777;
+}
+
+
+.cancel-button:hover {
+    background: #555;
+}
+
+
+.purchase-status {
+    text-align: center;
+
+    margin-top: 20px;
+
+    font-size: 18px;
+}
+
+
+/* =========================
+   PURCHASE STATUS
+   ========================= */
+
+.purchase-status-section {
+    background: white;
+
+    padding: 25px;
+
+    margin-bottom: 30px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.purchase-status-section h2 {
+    margin-top: 0;
+
+    margin-bottom: 20px;
+}
+
+
+.no-purchases {
+    color: #777;
+}
+
+
+/* =========================
+   PURCHASE ROW
+   ========================= */
+
+.purchase-card {
+    display: flex;
+
+    align-items: center;
+
+    margin-bottom: 10px;
+}
+
+
+.purchase-card:last-child {
+    margin-bottom: 0;
+}
+
+
+/* Item + Status + Button */
+
+.purchase-info {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+}
+
+
+/* Item name */
+
+.purchase-item-name {
+    font-size: 18px;
+
+    font-weight: normal;
+}
+
+
+/* =========================
+   PENDING STATUS
+   ========================= */
+
+.status-pending {
+    font-weight: bold;
+
+    color: #856404;
+
+    margin-left: 5px;
+}
+
+
+/* =========================
+   ARRIVED STATUS
+   ========================= */
+
+.status-arrived {
+    font-weight: bold;
+
+    color: #155724;
+
+    margin-left: 5px;
+}
+
+
+/* =========================
+   ARRIVED BUTTON
+   ========================= */
+
+.arrived-button {
+    width: auto !important;
+
+    padding: 5px 12px;
+
+    margin: 0 0 0 5px;
+
+    background: #333;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    font-size: 14px;
+}
+
+
+.arrived-button:hover {
+    background: #555;
+}
+
+
+/* =========================
+   DELETE BUTTON
+   ========================= */
+
+.delete-button {
+    width: auto !important;
+
+    padding: 2px 5px;
+
+    margin: 0 0 0 5px;
+
+    background: transparent !important;
+
+    color: #555;
+
+    border: none;
+
+    font-size: 15px;
+
+    cursor: pointer;
+}
+
+
+.delete-button:hover {
+    background: transparent !important;
+
+    color: #d11a2a;
+}
+
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media (max-width: 700px) {
+
+    .products-container {
+        width: 95%;
+
+        margin: 20px auto;
+    }
+
+
+    .add-product-fields {
+        grid-template-columns: 1fr;
+    }
+
+
+    table {
+        min-width: 850px;
+    }
+
+
+    .purchase-info {
+        flex-wrap: wrap;
+    }
+
+
+    .arrived-button {
+        width: auto !important;
+    }
+
+}
+
